@@ -2,4 +2,4 @@
 Project for CSSI
 
 Authors:
-Ting Ting - Hi.
+Ting Ting - Hey Y'all.
