@@ -1,6 +1,38 @@
 body {
   background-image: url("cork.jpg");
-  background-color: pink;
   background-size: 1000px 1000px;
-
+  margin: 3em;
+}
+h2 {
+	font-family: "Amatic SC";
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+}
+ul li{
+  margin:1em;
+  float:left;
 }
