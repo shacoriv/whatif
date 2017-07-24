@@ -40,6 +40,7 @@ class View(webapp2.RequestHandler):
         byte_s = query.fetch()
         template = jinja_environment.get_template('view.html')
         var = {'byte':byte_s}
+        logging.info(var)
         self.response.out.write(template.render(var))
 
 app = webapp2.WSGIApplication([
