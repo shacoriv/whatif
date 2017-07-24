@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CheerBytes</title>
+    <link type="text/css" rel="stylesheet" href="resources/main.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="resources/main.js"></script>
+  </head>
+  <body>
+<!-- To go back to homepage! -->
+    <div> <section class = "return">
+    <a href="main.html" title="Homepage"> Back to Homepage </a> </div>
+<!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
+    <form method = "post" action = "/create_byte">
+      Post: <textarea name = "byte"></textarea>
+      <input type = "submit" value = "Stick!"></input>
+    </form>
+
+    <h2>Cheerbytes!</h2>
+      {% for byt in byte %}
+        {{byt.byte}}
+      {% endfor %}
+  </body>
+</html>

@@ -3,6 +3,7 @@ body {
   background-size: 1000px 1000px;
   margin: 3em;
 }
+<<<<<<< HEAD
 h2 {
 	font-family: "Amatic SC";
 	font-size: 50px;
@@ -36,3 +37,5 @@ ul li{
   margin:1em;
   float:left;
 }
+=======
+>>>>>>> 92cc4ca6bdc84670ac0ffe6c72c4bfb50c7d9c77
