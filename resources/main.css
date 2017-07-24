@@ -1,8 +1,6 @@
 body {
-  background-image: url("CorkBoardBkgd.jpg");
+  background-image: url("cork.jpg");
   background-color: pink;
-}
+  background-size: 1000px 1000px;
 
-.backimg {
-  opacity: 0.5;
 }
