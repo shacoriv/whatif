@@ -2,3 +2,7 @@ body {
   background-image: url("CorkBoardBkgd.jpg");
   background-color: pink;
 }
+
+.backimg {
+  opacity: 0.5;
+}
