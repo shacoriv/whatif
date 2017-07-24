@@ -3,8 +3,5 @@ Project for CSSI
 
 Authors:
 Ting Ting - Hey Y'all.
-=======
 Tommy - Tommy is a little lost.
-PLEASE CHANGE
-PLEASE
-CHANGE
+HELLO!
