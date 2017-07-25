@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #application: cheerbytes-whatif
-=======
-application: cheerbyte
->>>>>>> 13928b45a5c3eb60b2673f77d1e8b0e96f88a333
 runtime: python27
 api_version: 1
 threadsafe: true
