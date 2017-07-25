@@ -3,7 +3,6 @@ body {
   background-size: 1000px 1000px;
   margin: 3em;
 }
-<<<<<<< HEAD
 h2 {
 	font-family: "Amatic SC";
 	font-size: 50px;
@@ -12,7 +11,7 @@ h2 {
 	font-weight: 500;
 	line-height: 26.4px;
 }
-}
+
 h2,p{
   font-size:100%;
   font-weight:normal;

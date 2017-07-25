@@ -1,38 +1,38 @@
-body {
-  background-image: url("cork.jpg");
-  background-size: 1000px 1000px;
-  margin: 3em;
+h1 {
+	font-family: "Amatic SC";
+	font-size: 100px;
+	font-weight: 500;
+	line-height: 30px;
+  top: 20px;
+  text-align: center;
+  border: 3px solid black;
+  padding: 35px;
+  margin: 20px;
+  background-color: orange;
 }
 
 body {
-  background-size: 800px 800px;
+  font-weight: bold;
+  font-family: "Amatic SC";
+  font-size: 40px;
+  background-size: 500px 500px;
+  background-image: url("resources/cork.jpg");
 }
 
 .flex-container {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
+    align-content: center;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 1000px;
+    height: 460px;
+    padding: 10px;
+    border: 3px dotted black;
+    align-self: center;
 }
-.row {
-    width: auto;
-    border: 1px solid blue;
-}
+
 .flex-item {
-    background-color: tomato;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
     text-align: center;
+    background-color: ;
+    width: 500px;
+    height: 400px;
 }
