@@ -1,7 +1,6 @@
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
-  margin: 3em;
 }
 h2 {
 	font-family: "Amatic SC";
@@ -10,6 +9,7 @@ h2 {
 	font-variant: normal;
 	font-weight: bold;
 	line-height: 26.4px;
+  margin: 3em;
 }
 
 h2,p{
