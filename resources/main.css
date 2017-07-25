@@ -4,17 +4,17 @@ body {
 }
 h2 {
 	font-family: "Amatic SC";
-	font-size: 50px;
+	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
 	line-height: 26.4px;
   margin: 3em;
+
 }
 
 h2,p{
   font-size:100%;
-  font-weight:normal;
 }
 ul,li{
   list-style:none;
@@ -78,9 +78,9 @@ li.card{
   top: 175px;
   left: 300px;
   -o-transform:rotate(4deg);
- -webkit-transform:rotate(4deg);
- -moz-transform:rotate(4deg);
- z-index: 2;
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  z-index: 2;
 }
 #to{
   top: 250px;
