@@ -8,10 +8,17 @@ function close(){
   console.log("hello world");
   $('#lightbox').hide();
   $("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+  location.reload();
 };
 
+function closebutton(){
+  $('#lightbox').hide();
+  $("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+  location.reload();
+}
 
 $(document).ready(function (){
   $('#open').on("click",open);
-  $('#close').on("click",close);
+  $('.close').on("click",close);
+  $('.button').on("click",closebutton);
 })

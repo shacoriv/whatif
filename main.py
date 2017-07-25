@@ -9,6 +9,7 @@ import urllib
 import urllib2
 from google.appengine.api import users
 from google.appengine.ext import ndb
+import time
 
 jinja_environment = jinja2.Environment(
     loader = jinja2.FileSystemLoader(
@@ -48,8 +49,6 @@ class AboutHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('about.html')
         self.response.out.write(template.render())
 
-app = webapp2.WSGIApplication([
-    ('/', MainHandler),], debug=True)
 
 class CreateByte(webapp2.RequestHandler):
     def post(self):
@@ -59,6 +58,7 @@ class CreateByte(webapp2.RequestHandler):
             byte = Byte(byte = self.request.get('byte'))
             byte.key = byte_key
             byte.put()
+            time.sleep(1)
         self.redirect('/view.html')
 
 class View(webapp2.RequestHandler):

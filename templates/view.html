@@ -3,6 +3,7 @@
   <head>
     <title>CheerBytes</title>
     <link type="text/css" rel="stylesheet" href="resources/view.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="resources/view.js"></script>
     <style>
@@ -13,28 +14,34 @@
 <!-- The lightbox that's hidden -->
     <div id="lightbox">
       <div id="lightbox_area">
-        <h2>Byte:</h2>
+        <h3>Byte:</h3>
         <p>
         <!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
             <form method = "post" action = "/create_byte">
               <textarea name = "byte"></textarea>
-              <input type = "submit" value = "Stick!"></input>
+              <input type = "submit" value = "Stick!" class = "button"></input>
             </form></p>
-        <div id="close"><b>X</b></div>
+        <div class="close"><b>X</b></div>
       </div>
     </div>
-<!-- To go back to homepage! -->
-    <div> <section class = "return">
-    <a href="main.html" title="Homepage"> Back to Homepage </a> </div>
+<!-- Wrapper that blurs out -->
+
 <!-- Post comments -->
-    <h2>Cheerbytes!</h2>
+    <h1>Cheerbytes!</h1>
+    <div id = "wrapper">
+    <div class = "containers">
       {% for byt in byte %}
-        {{byt.byte}}
+        <p><div class = "text">{{byt.byte}}</div></p>
       {% endfor %}
+    </div>
 <!-- CLick Here -->
-    <div>
+    <div class="container3">
       <p id="open">Post a Byte!</p>
     </div>
-
+  </div>
+<!-- To go back to homepage! -->
+      <div class = "return" id="navb">
+        <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
+      </div>
   </body>
 </html>
