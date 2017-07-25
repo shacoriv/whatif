@@ -1,14 +1,14 @@
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
-  margin: 3em}
-
+  margin: 3em;
+}
 h2 {
 	font-family: "Amatic SC";
 	font-size: 50px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: bold;
 	line-height: 26.4px;
 }
 
@@ -31,8 +31,164 @@ ul li a{
   height:10em;
   width:10em;
   padding:1em;
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
-ul li{
-  margin:1em;
-  float:left;
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+  border-bottom-right-radius: 60px 5px;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(6deg);
+  -webkit-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+  position:relative;
+  top:-5px;
+  background:#ffddcc;
+}
+ul li:nth-child(4n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-5px;
+  background:#f5ccff;
+  border-bottom-right-radius: 60px 5px;
+}
+ul li:nth-child(6n) a{
+  -o-transform:rotate(-6deg);
+  -webkit-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  position:relative;
+  top:-5px;
+  background:#ffccee;
+}
+
+div.container{
+  position: relative;
+}
+li.card{
+  position: absolute;
+}
+#welcome{
+  top: 175px;
+  left: 300px;
+  -o-transform:rotate(4deg);
+ -webkit-transform:rotate(4deg);
+ -moz-transform:rotate(4deg);
+ z-index: 2;
+}
+#to{
+  top: 250px;
+  left: 550px;
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  z-index: 2;
+}
+#cheerbytes{
+  top: 320px;
+  left: 800px;
+  o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  z-index: 2;
+}
+#one{
+  top:400px;
+  left: 920px;
+  z-index: -1;
+}
+#two{
+  top: 440px;
+  left: 700px;;
+}
+#three{
+  top:100px;
+  left:200px;
+}
+#four{
+  top:150px;
+  left:600px;
+}
+#five{
+  top:400px;
+  left:600px;
+}
+#six{
+  top:100px;
+  left:400px;
+}
+#seven{
+  top:400px;
+  left:200px;
+}
+#eight{
+  top: 200px;
+  left:900px;
+}
+#nine{
+  top: 100px;
+  left:700px;
+}
+#ten{
+  top: 500px;
+  left: 200px;
+}
+#eleven{
+  top:150px;
+  left:800px;
+}
+#twelve{
+  top:300px;
+  left:400px;
+}
+#thirteen{
+  top: 475px;
+  left:400px;
+}
+#fourteen{
+  top:400px;
+  left:500px;
+}
+p.about{
+  border: 3px;
+  border-style: dotted;
+
+}
+p.post{
+  border: 3px;
+  border-style: dotted;
+
+}
+#nav{
+	font-family: "Amatic SC";
+	font-size: 70px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 26.4px;
+  padding: 10px;
+  color: black;
+
+}
+#nav a{
+  text-decoration: none;
+  padding: 18px 18px 18px 18px;
+  border: dotted;
+  background-color: #ffffff;
+  color: black;
+
+}
+div.container2{
+  position: relative;
+}
+#about{
+  position: absolute;
+  top:550px;
+  left:1000px;
 }
