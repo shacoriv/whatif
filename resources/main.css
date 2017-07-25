@@ -2,19 +2,18 @@ body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
 }
-h2 {
+ul li a h2 {
 	font-family: "Amatic SC";
-	font-size: 50px;
-	font-style: normal;
+	font-size: 60px;
+  font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
 	line-height: 26.4px;
-  margin: 3em;
+
 }
 
 h2,p{
   font-size:100%;
-  font-weight:normal;
 }
 ul,li{
   list-style:none;
@@ -78,9 +77,9 @@ li.card{
   top: 175px;
   left: 300px;
   -o-transform:rotate(4deg);
- -webkit-transform:rotate(4deg);
- -moz-transform:rotate(4deg);
- z-index: 2;
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  z-index: 2;
 }
 #to{
   top: 250px;
@@ -174,19 +173,23 @@ p.post{
 	line-height: 26.4px;
   padding: 10px;
   color: black;
-
 }
+
 #nav a{
   text-decoration: none;
-  padding: 18px 18px 18px 18px;
+  padding: 5px;
   border: dotted;
   background-color: #ffffff;
   color: black;
 
 }
+
 div.container2{
+  font-size: 30px;
   position: relative;
+  bottom: 20px;
 }
+
 #about{
   position: absolute;
   top:550px;
