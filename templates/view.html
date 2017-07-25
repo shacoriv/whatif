@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>CheerBytes</title>
-    <link type="text/css" rel="stylesheet" href="resources/main.css">
+    <link type="text/css" rel="stylesheet" href="resources/view.css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="resources/main.js"></script>
+    <script src="resources/view.js"></script>
   </head>
   <body>
 <!-- To go back to homepage! -->
@@ -19,5 +19,10 @@
       {% for byt in byte %}
         {{byt.byte}}
       {% endfor %}
+    <div id = "footer">
+      <form method = "post" action = "/comment">
+        <input type = "button" value = "Post a Byte!" name = "post_byte"></input>
+      </form>
+    </div>
   </body>
 </html>

@@ -43,9 +43,15 @@ class View(webapp2.RequestHandler):
         logging.info(var)
         self.response.out.write(template.render(var))
 
+class AboutHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('about.html')
+        self.response.out.write(template.render())
+        
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/create_byte', CreateByte),
     ('/view.html', View),
     ('/main.html', MainHandler),
+    ('/about.html', AboutHandler),
 ], debug=True)
