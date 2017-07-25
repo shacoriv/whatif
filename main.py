@@ -47,7 +47,7 @@ class AboutHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('about.html')
         self.response.out.write(template.render())
-        
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler),], debug=True)
 
@@ -74,8 +74,5 @@ app = webapp2.WSGIApplication([
     ('/create_byte', CreateByte),
     ('/view.html', View),
     ('/main.html', MainHandler),
-<<<<<<< HEAD
-=======
     ('/about.html', AboutHandler),
->>>>>>> e07cd83b5b34595d9500aee4a8b425484af2bcee
 ], debug=True)
