@@ -1,8 +1,8 @@
-application: whatif
+application: cheerbyte
 runtime: python27
 api_version: 1
 threadsafe: true
-#service: post_it
+#service: cheerbyte
 
 handlers:
 - url: /favicon\.ico

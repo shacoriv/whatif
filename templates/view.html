@@ -2,40 +2,39 @@
 <html>
   <head>
     <title>CheerBytes</title>
-<<<<<<< HEAD
-    <link type="text/css" rel="stylesheet" href="resources/main.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="resources/main.js"></script>
-=======
     <link type="text/css" rel="stylesheet" href="resources/view.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="resources/view.js"></script>
->>>>>>> e07cd83b5b34595d9500aee4a8b425484af2bcee
+    <style>
+      { display: block; }
+    </style>
   </head>
   <body>
+<!-- The lightbox that's hidden -->
+    <div id="lightbox">
+      <div id="lightbox_area">
+        <h2>Byte:</h2>
+        <p>
+        <!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
+            <form method = "post" action = "/create_byte">
+              <textarea name = "byte"></textarea>
+              <input type = "submit" value = "Stick!"></input>
+            </form></p>
+        <div id="close"><b>X</b></div>
+      </div>
+    </div>
 <!-- To go back to homepage! -->
     <div> <section class = "return">
     <a href="main.html" title="Homepage"> Back to Homepage </a> </div>
-<!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
-    <form method = "post" action = "/create_byte">
-      Post: <textarea name = "byte"></textarea>
-      <input type = "submit" value = "Stick!"></input>
-    </form>
-<<<<<<< HEAD
-
-=======
->>>>>>> e07cd83b5b34595d9500aee4a8b425484af2bcee
+<!-- Post comments -->
     <h2>Cheerbytes!</h2>
       {% for byt in byte %}
         {{byt.byte}}
       {% endfor %}
-<<<<<<< HEAD
-=======
-    <div id = "footer">
-      <form method = "post" action = "/comment">
-        <input type = "button" value = "Post a Byte!" name = "post_byte"></input>
-      </form>
+<!-- CLick Here -->
+    <div>
+      <p id="open">Post a Byte!</p>
     </div>
->>>>>>> e07cd83b5b34595d9500aee4a8b425484af2bcee
+
   </body>
 </html>
