@@ -1,0 +1,38 @@
+h1 {
+	font-family: "Amatic SC";
+	font-size: 100px;
+	font-weight: 500;
+	line-height: 30px;
+  top: 20px;
+  text-align: center;
+  border: 3px solid black;
+  padding: 35px;
+  margin: 20px;
+  background-color: orange;
+}
+
+body {
+  font-weight: bold;
+  font-family: "Amatic SC";
+  font-size: 40px;
+  background-size: 500px 500px;
+  background-image: url("CorkBoardBkgd.jpg");
+}
+
+.flex-container {
+    align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    width: 1000px;
+    height: 460px;
+    padding: 10px;
+    border: 3px dotted black;
+    align-self: center;
+}
+
+.flex-item {
+    text-align: center;
+    background-color: ;
+    width: 500px;
+    height: 400px;
+}
