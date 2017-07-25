@@ -1,0 +1,24 @@
+body {
+  background-image: url("cork.jpg");
+  background-size: 1000px 1000px;
+  margin: 3em;
+}
+
+#footer {
+  text-align: center;
+  color:white;
+}
+
+#footer a {
+  margin: 0 20px;
+}
+
+#footer a:visited {
+	text-decoration:none;
+	color:white;
+}
+
+#footer a:hover {
+	text-decoration:underline;
+	color:gray;
+}

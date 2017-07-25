@@ -16,7 +16,7 @@ body {
   font-family: "Amatic SC";
   font-size: 40px;
   background-size: 500px 500px;
-  background-image: url("CorkBoardBkgd.jpg");
+  background-image: url("resources/cork.jpg");
 }
 
 .flex-container {

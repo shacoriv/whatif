@@ -1,9 +1,8 @@
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
-  margin: 3em;
-}
-<<<<<<< HEAD
+  margin: 3em}
+
 h2 {
 	font-family: "Amatic SC";
 	font-size: 50px;
@@ -12,7 +11,7 @@ h2 {
 	font-weight: 500;
 	line-height: 26.4px;
 }
-}
+
 h2,p{
   font-size:100%;
   font-weight:normal;
@@ -37,5 +36,3 @@ ul li{
   margin:1em;
   float:left;
 }
-=======
->>>>>>> 92cc4ca6bdc84670ac0ffe6c72c4bfb50c7d9c77

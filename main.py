@@ -24,7 +24,30 @@ class MainHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('main.html')
         self.response.out.write(template.render())
 
+class CreateByte(webapp2.RequestHandler):
+    def post(self):
+        byte_key = ndb.Key('Byte', self.request.get("byte"))
+        byte = byte_key.get()
+        if not byte:
+            byte = Byte(byte = self.request.get('byte'))
+            byte.key = byte_key
+            byte.put()
+        self.redirect('/view.html')
 
+class View(webapp2.RequestHandler):
+    def get(self):
+        query = Byte.query().order(Byte.byte)
+        byte_s = query.fetch()
+        template = jinja_environment.get_template('view.html')
+        var = {'byte':byte_s}
+        logging.info(var)
+        self.response.out.write(template.render(var))
+
+class AboutHandler(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('about.html')
+        self.response.out.write(template.render())
+        
 app = webapp2.WSGIApplication([
     ('/', MainHandler),], debug=True)
 
@@ -51,4 +74,8 @@ app = webapp2.WSGIApplication([
     ('/create_byte', CreateByte),
     ('/view.html', View),
     ('/main.html', MainHandler),
+<<<<<<< HEAD
+=======
+    ('/about.html', AboutHandler),
+>>>>>>> e07cd83b5b34595d9500aee4a8b425484af2bcee
 ], debug=True)
