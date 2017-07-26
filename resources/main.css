@@ -155,16 +155,7 @@ li.card{
   top:400px;
   left:500px;
 }
-p.about{
-  border: 3px;
-  border-style: dotted;
 
-}
-p.post{
-  border: 3px;
-  border-style: dotted;
-
-}
 #nav{
 	font-family: "Amatic SC";
 	font-size: 70px;
@@ -182,17 +173,27 @@ p.post{
   border: dotted;
   background-color: #ffffff;
   color: black;
-
 }
 
-div.container2{
-  font-size: 30px;
-  position: relative;
-  bottom: 20px;
-}
-
-#about{
+#post {
   position: absolute;
-  top:550px;
-  left:1000px;
+  top: 620px;
+  left: 1100px;
+}
+#about {
+  position: absolute;
+  top:620px;
+  left:1250px;
+}
+
+div.nav-button {
+  padding: 10px;
+  background: white;
+  border: 3px dotted black;
+  font-family: "Amatic SC";
+  font-size: 50px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  margin: 10px;
 }
