@@ -3,7 +3,6 @@
   <head>
     <title>CheerBytes</title>
     <link type="text/css" rel="stylesheet" href="resources/view.css">
-
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="resources/view.js"></script>
@@ -19,25 +18,30 @@
         <p>
         <!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
             <form method = "post" action = "/create_byte">
-              <textarea name = "byte" maxlength="10"></textarea>
-              <input type = "submit" value="Stick!"></input>
+              <textarea name = "byte"></textarea>
+              <input type = "submit" value = "Stick!" class = "button"></input>
             </form></p>
-        <div id="close"><b>X</b></div>
+        <div class="close"><b>X</b></div>
       </div>
     </div>
-    <!-- Post comments -->
-        <h1>Cheerbytes!</h1>
-          {% for byt in byte %}
-            {{byt.byte}}
-          {% endfor %}
-<!-- CLick Here -->
-    <div class="container3" id="navb">
-      <p id="open" style="font-size: 30px; padding: 0px; font-weight: bold;">Post a Byte!</p>
+<!-- Wrapper that blurs out -->
+
+<!-- Post comments -->
+    <h1>Cheerbytes!</h1>
+    <div id = "wrapper">
+    <div class = "containers">
+      {% for byt in byte %}
+        <p><div class = "text">{{byt.byte}}</div></p>
+      {% endfor %}
     </div>
+<!-- CLick Here -->
+    <div class = "flex-container">
+      <p id="open">Post a Byte!</p>
+    </div>
+  </div>
 <!-- To go back to homepage! -->
-      <div class = "return" >
+      <div class = "flex-container2">
         <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
       </div>
-
   </body>
 </html>
