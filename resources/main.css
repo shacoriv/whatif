@@ -1,3 +1,6 @@
+@import "compass/css3";
+
+
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
@@ -156,13 +159,9 @@ li.card{
 }
 p.about{
   border: 3px;
-  border-style: dotted;
-
 }
 p.post{
   border: 3px;
-  border-style: dotted;
-
 }
 #nav{
 	font-family: "Amatic SC";
@@ -178,8 +177,7 @@ p.post{
 #nav a{
   text-decoration: none;
   padding: 5px;
-  border: dotted;
-  background-color: #ffffff;
+  background-color: #ffddcc;
   color: black;
 
 }
