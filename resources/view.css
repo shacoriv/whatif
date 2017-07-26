@@ -1,3 +1,4 @@
+
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
@@ -27,11 +28,9 @@ h3 {
     width:400px;
     height:300px;
     padding:23px;
-    border:1px solid #444;
-    border-radius:20px;
-  }
-  div.container3{
-    position: relative;
+    background:#ffc;
+    top: 100px;
+    left: -50px;
   }
   #open{
     cursor:pointer;
@@ -45,8 +44,15 @@ h3 {
     padding:1em;
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     position: relative;
-    top:100px;
-    left:600px;
+    top:5%;
+    left:25%;
+    font-size: 50px;
+    margin-top: 0px;
+    bottom: 0px;
+    padding-bottom: 30px;
+    height: 187px;
+    width: 175px;
+
 
   }
 
@@ -54,7 +60,7 @@ h3 {
   padding:20px;
   color: transparent;
   text-shadow:0px 0px 0px #000;
-  position: fixed;
+  position: absolute;
 }
   .close{
     cursor:pointer;
@@ -67,14 +73,20 @@ h3 {
     position:relative;
     background:#e11;
     color:#fff;
+    font-family: "Amatic SC";
+    top: -300px;
+    left: 375px;
+
   }
 
 .text {
-  width:10em;
+  font-family: "Amatic SC";
+  width:12em;
   height:12em;
   background: #ffc;
-  margin: 3px;
+  margin: 4px;
   display: block;
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 .containers {
@@ -103,7 +115,33 @@ h3 {
       padding: 35px;
       margin: 20px;
       background-color: orange;
+      -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     }
     p{
       font-family: "Amatic SC"
     }
+.flex-container {
+      display: -webkit-flex;
+      display: flex;
+      width: 400px;
+      height: 250px;
+      margin-top: 60px;
+      margin-left: 450px;
+      position: absolute;
+
+
+
+    }
+.flex-container2 {
+      display: -webkit-flex;
+      display: flex;
+      width: 450px;
+      height: 250px;
+      margin-top: 600px;
+      margin-left: 450px;
+
+        }
+  #home{
+    top:5%;
+    left:25%;
+  }

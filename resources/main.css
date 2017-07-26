@@ -11,11 +11,6 @@ ul li a h2 {
 	font-weight: bold;
 	line-height: 26.4px;
 }
-
-h2,p{
-  font-size:100%;
-  font-weight: normal;
-}
 ul,li{
   list-style:none;
 }
@@ -156,6 +151,13 @@ li.card{
   left:500px;
 }
 
+p.about{
+  border: 3px;
+}
+p.post{
+  border: 3px;
+}
+
 #nav{
 	font-family: "Amatic SC";
 	font-size: 70px;
@@ -170,9 +172,9 @@ li.card{
 #nav a{
   text-decoration: none;
   padding: 5px;
-  border: dotted;
-  background-color: #ffffff;
+  background-color: #ffddcc;
   color: black;
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 #post {
