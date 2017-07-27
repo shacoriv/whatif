@@ -26,21 +26,21 @@
       </div>
     </div>
 <!-- Post comments -->
-    <h1>Cheerbytes!</h1>
+    <a href="main.html" id="home" title="Homepage" style="text-decoration: none;"><h1>Cheerbytes!</h1></a> <!--Click to go back to home-->
     <div id = "wrapper">
     <div class = "containers">
       {% for byt in byte %}
         <p><div class = "text" id = "{{byt.byte}}" onclick= "byte_text(&quot;{{byt.byte}}&quot;)">{{byt.byte}}</div></p>
       {% endfor %}
     </div>
-<!-- CLick Here -->
+<!-- Click Here -->
     <div class = "flex-container">
       <p id="open">Post a Byte!</p>
     </div>
     </div>
 <!-- To go back to homepage! -->
-      <div class = "flex-container2">
-        <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
-      </div>
+    <!--  <div class = "flex-container2">
+        <h2>Back to Homepage</h2>
+      </div> -->
   </body>
 </html>
