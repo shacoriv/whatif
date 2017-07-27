@@ -5,10 +5,8 @@
     <link type="text/css" rel="stylesheet" href="resources/view.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="resources/view.js"></script>
-    <style>
-      { display: block; }
-    </style>
   </head>
   <body>
 <!-- The lightbox that's hidden -->
@@ -16,31 +14,39 @@
       <div id="lightbox_area">
         <h3>Byte:</h3>
         <p>
+<<<<<<< HEAD
         <!--THIS IS FOR THE COMMENT BOX! DON'T CHANGE PLEASE -->
             <form method = "post" action = "/create_byte">
               <textarea maxlength="230" name = "byte"> </textarea>
+=======
+        <!--THIS IS FOR THE COMMENT BOX! -->
+            <form method = "post" action = "/create_byte" >
+              <textarea id = "textarea" name = "byte" placeholder= "Please Leave a Cheerbyte!"></textarea>
+>>>>>>> 6c2995f1aa17d30829df4c78746fccd8baa399d9
               <input type = "submit" value = "Stick!" class = "button"></input>
-            </form>
+            <!-- This is for the color section in the comment box -->
+              <textarea id = "colortextarea" name = "color"></textarea>
+              <div class = "combine"><div class="choice" style="color: black; border: 3px solid black; background-color: #ffddcc;" onclick="chBackcolor('#ffddcc')"></div>
+              <div class="choice" style="color: black; border: 3px solid black; background-color: #ffccee;" onclick="chBackcolor('#ffccee')" ></div>
+              <div class="choice" style="color: black; border: 3px solid black; background-color: #cfc;" onclick="chBackcolor('#cfc')" ></div>
+              <div class="choice" style="color: black; border: 3px solid black; background-color: #f5ccff;" onclick="chBackcolor('#f5ccff')" ></div>
+            </div></form>
         </p>
         <div class="close"><b>X</b></div>
       </div>
     </div>
 <!-- Post comments -->
-    <h1>Cheerbytes!</h1>
+    <a href="main.html" id="home" title="Homepage" style="text-decoration: none;" ><h1>Cheerbytes!</h1></a> <!--Click to go back to home-->
     <div id = "wrapper">
     <div class = "containers">
       {% for byt in byte %}
-        <p><div class = "text" id = "{{byt.byte}}" onclick= "byte_text(&quot;{{byt.byte}}&quot;)">{{byt.byte}}</div></p>
+        <p><div class = "text" style ="background-color:{{byt.color}}">{{byt.byte}}</div></p>
       {% endfor %}
     </div>
-<!-- CLick Here -->
+<!-- CLick Here to Post a Byte-->
     <div class = "flex-container">
       <p id="open">Post a Byte!</p>
     </div>
-    </div>
-<!-- To go back to homepage! -->
-      <div class = "flex-container2">
-        <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
-      </div>
+  </div>
   </body>
 </html>
