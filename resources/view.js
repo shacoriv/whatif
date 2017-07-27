@@ -79,8 +79,8 @@ var byte = true;
 function onClick(e) {
   console.log(e);
   var clickedElement = $(e.currentTarget);
-  var bodyWidth = (document.body.clientWidth)-100;
-  var bodyHeight = (document.body.clientHeight)-500;
+  var bodyWidth = (document.body.clientWidth);
+  var bodyHeight = (document.body.clientHeight);
   var randPosX = Math.random()*bodyWidth;
   var randPosY = Math.random()*bodyHeight;
   $(clickedElement).css('left', randPosX);

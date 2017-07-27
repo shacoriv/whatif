@@ -7,7 +7,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
 }
 
 textarea {
@@ -20,38 +19,10 @@ h3 {
 	font-family: "Amatic SC";
 }
 
-h2 {
-  	font-family: "Amatic SC";
-  	font-size: 40px;
-  	font-style: normal;
-  	font-variant: normal;
-  	font-weight: bold;
-  	line-height: 26.4px;
-    margin: 3em;
-}
-h1{
-    	font-family: "Amatic SC";
-    	font-size: 100px;
-    	font-weight: 500;
-    	line-height: 30px;
-      top: 20px;
-      text-align: center;
-      border: 3px solid black;
-      padding: 35px;
-      margin: 20px;
-      background-color: orange;
-      -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-}
-p{
-  font-family: "Amatic SC"
-}
 #colortextarea{
   display: none;
 }
-#home{
-  top:5%;
-  left:25%;
-}
+
 #lightbox{
     display:none;
     position:fixed;
@@ -123,12 +94,6 @@ p{
   position: relative;
   flex-direction: row-reverse;
 }
-.containers {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  margin: 5px;
-}
 .text {
   font-family: "Amatic SC";
   width:160px;
@@ -138,6 +103,40 @@ p{
   position: absolute;
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
+
+.containers {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+  h2 {
+  	font-family: "Amatic SC";
+  	font-size: 40px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: bold;
+  	line-height: 26.4px;
+    margin: 3em;
+  }
+  h1{
+    	font-family: "Amatic SC";
+    	font-size: 100px;
+    	font-weight: 500;
+    	line-height: 30px;
+      top: 20px;
+      text-align: center;
+      border: 3px solid black;
+      padding: 35px;
+      margin: 20px;
+      background-color: orange;
+      -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      color: black;
+    }
+    p{
+      font-family: "Amatic SC"
+    }
 .flex-container {
       display: -webkit-flex;
       display: flex;
@@ -147,11 +146,7 @@ p{
       margin-left: 450px;
       position: absolute;
 }
-.flex-container2 {
-      display: -webkit-flex;
-      display: flex;
-      width: 450px;
-      height: 250px;
-      margin-top: 600px;
-      margin-left: 475px;
-}
+
+  #home h1:hover {
+    color: white;
+  }

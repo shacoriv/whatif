@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+
       <title>Cheerbytes</title>
-    <link type="text/css" rel="stylesheet" href="../resources/main.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+        <link type="text/css" rel="stylesheet" href="../resources/main.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
       <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="resources/main.js"></script>
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>
       <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   </head>
     <body>
-      <div class="container">
-      <ul>
-        <li class="card" id="welcome"><a href="#"><h2>Welcome</h2></a></li>
-        <li class="card" id="to"><a href="#"><h2><center>to<center></h2></a></li>
-        <li class="card" id="cheerbytes"><a href="#"><h2><center>Cheerbytes<center></h2></a></li>
-        <li class="card" id="one"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="two"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="three"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="four"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="five"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="six"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="seven"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="eight"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="nine"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="ten"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="eleven"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="twelve"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="thirteen"><a href="#"><h2><center><center></h2></a></li>
-        <li class="card" id="fourteen"><a href="#"><h2><center><center></h2></a></li>
-      </ul>
-    </div>
+      <!--FB SHARE PT.1-->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+              <!--POST IT NOTES-->
+              <div class="container">
+              <ul>
+                <li class="card" id="welcome"><a href="#"><h2>Welcome</h2></a></li>
+                <li class="card" id="to"><a href="#"><h2><center>to<center></h2></a></li>
+                <li class="card" id="cheerbytes"><a href="#"><h2><center>Cheerbytes<center></h2></a></li>
+                <li class="card" id="one"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="two"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="three"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="four"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="five"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="six"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="seven"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="eight"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="nine"><a href="#"><h2><center><center></h2></a></li>
+                <!--<li class="card" id="ten"><a href="#"><h2><center><center></h2></a></li>-->
+                <li class="card" id="eleven"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="twelve"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="thirteen"><a href="#"><h2><center><center></h2></a></li>
+                <li class="card" id="fourteen"><a href="#"><h2><center><center></h2></a></li>
+              </ul>
+            </div>
+
+      <!--NAV BUTTONS-->
       <div class="nav-button" id="about"><a href = "about.html" style="text-decoration: none; color: black;">About!</a></div>
       <div class="nav-button" id="post"><a href = "view.html" style="text-decoration: none; color: black;">View!</a></div>
-  </body>
+        <!--Hand Image-->
+        <img id="hand" src="resources/handwrite2.png"/>
+          <!--Mail Share Link Button-->
+          <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://cheerbytes-whatif.appspot.com/."
+          title="Share by Email">
+          <img id="mail" src="resources/mailart.png" >
+          </a>
+            <!--Twitter Share Link Button-->
+            <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=https://cheerbytes-whatif.appspot.com/" target="_blank">
+            <img id="twitter" src="resources/twitter.png"></a>
+              <!--FB Share Link Button-->
+              <div class="fb-share-button" data-href="https://cheerbytes-whatif.appspot.com/"
+              data-layout="button" data-size="small" data-mobile-iframe="true"><a id="fb" target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcheerbytes-whatif.appspot.com%2F&amp;src=sdkpreparse">
+              <img src="resources/facebook.png" heigth="60" width="60"></a></div>
+                  <!--G Plus Share Link Button-->
+                  <a id="gplus" target="_blank" href="https://plus.google.com/share?url=https://cheerbytes-whatif.appspot.com/" onclick="javascript:window.open(this.href,
+                  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                  <img src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
+      </body>
 </html>
