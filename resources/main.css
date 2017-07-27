@@ -76,7 +76,9 @@ li.card{
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
   z-index: 2;
+
 }
+
 #to{
   top: 250px;
   left: 550px;
@@ -179,19 +181,18 @@ p.post{
 
 #post {
   position: absolute;
-  top: 620px;
-  left: 1100px;
+  top: 400px;
+  left: 1200px;
 }
 #about {
   position: absolute;
-  top:620px;
-  left:1250px;
+  top:520px;
+  left:1200px;
 }
 
 div.nav-button {
   padding: 10px;
-  background: white;
-  border: 3px dotted black;
+  background: #ffddcc;
   font-family: "Amatic SC";
   font-size: 50px;
   font-weight: bold;
@@ -199,3 +200,62 @@ div.nav-button {
   text-align: center;
   margin: 10px;
 }
+
+/* div.nav-button:hover {
+  border: 3px solid black;
+} */
+
+/*Hand Image & Effects*/
+#hand {
+  position: absolute;
+  height: 300px;
+  width: 590px;
+  left: 900px;
+  top: 30px;
+}
+
+/*Share Link Buttons*/
+#mail {
+  height: 100px;
+  width: 100px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  opacity: 0.7;
+}
+  #mail:hover {
+    opacity: 1.0;
+  }
+#twitter {
+  height: 80px;
+  width: 80px;
+  left: 30px;
+  top: 110px;
+  position: absolute;
+  opacity: 0.7;
+}
+  #twitter:hover {
+    opacity: 1.0;
+  }
+#fb {
+  height: 20px;
+  width: 20px;
+  left: 40px;
+  top: 210px;
+  position: absolute;
+  opacity: 0.7;
+}
+  #fb:hover {
+    opacity: 1.0;
+  }
+#gplus {
+  height: 20px;
+  width: 20px;
+  left: 38px;
+  top: 295px;
+  position: absolute;
+  opacity: 0.7;
+}
+  #gplus:hover {
+    opacity: 1.0;
+  }
