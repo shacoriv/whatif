@@ -77,10 +77,15 @@ for byt in byte_s:
 //This is for the enlarging and delarging of the bytes
 var byte = true;
 function onClick(e) {
+  console.log(e.currentTarget.id);
+  if (e.currentTarget.id == "#gplus") {
+    javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+    return false;
+  } else{
   console.log(e);
   var clickedElement = $(e.currentTarget);
-  var bodyWidth = (document.body.clientWidth);
-  var bodyHeight = (document.body.clientHeight);
+  var bodyWidth = (document.body.clientWidth)-300;
+  var bodyHeight = (document.body.clientHeight)+250;
   var randPosX = Math.random()*bodyWidth;
   var randPosY = Math.random()*bodyHeight;
   $(clickedElement).css('left', randPosX);
@@ -88,8 +93,8 @@ function onClick(e) {
   if (byte){
     byte = false;
     clickedElement.animate({
-      width: 200,
-      height: 200,
+      width: 300,
+      height: 300,
       "font-size": "30px",
     }, "slow");
   } else {
@@ -99,7 +104,7 @@ function onClick(e) {
     height:192,
     "font-size":"16px",
   }, "slow");
-}}
+}}}
 
 //The call for all the other functions
 $(document).ready(function (){

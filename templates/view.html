@@ -10,6 +10,16 @@
     <script src="resources/view.js"></script>
   </head>
   <body>
+<!--FB SHARE PT.1-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 <!-- The lightbox that's hidden -->
     <div id="lightbox">
       <div id="lightbox_area">
@@ -17,7 +27,7 @@
         <p>
         <!--THIS IS FOR THE COMMENT BOX! -->
             <form method = "post" action = "/create_byte" >
-              <textarea id = "textarea" name = "byte" placeholder= "Please Leave a Cheerbyte!"></textarea>
+              <textarea maxlength="230" id = "textarea" name = "byte" placeholder= "Please Leave a Cheerbyte!"></textarea>
               <input type = "submit" value = "Stick!" class = "button"></input>
             <!-- This is for the color section in the comment box -->
               <textarea id = "colortextarea" name = "color"></textarea>
@@ -43,5 +53,22 @@
       <p id="open">Post a Byte!</p>
     </div>
   </div>
+      <!--Mail Share Link Button-->
+      <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://cheerbytes-whatif.appspot.com/."
+      title="Share by Email">
+      <img id="mail" src="resources/mailart.png" >
+      </a>
+        <!--Twitter Share Link Button-->
+        <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=https://cheerbytes-whatif.appspot.com/" target="_blank">
+        <img id="twitter" src="resources/twitter.png"></a>
+          <!--FB Share Link Button-->
+          <div class="fb-share-button" data-href="https://cheerbytes-whatif.appspot.com/"
+          data-layout="button" data-size="small" data-mobile-iframe="true"><a id="fb" target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcheerbytes-whatif.appspot.com%2F&amp;src=sdkpreparse">
+          <img src="resources/facebook.png" heigth="60" width="60"></a></div>
+              <!--G Plus Share Link Button-->
+              <a id="gplus" target="_blank" href="https://plus.google.com/share?url=https://cheerbytes-whatif.appspot.com/" >
+              <img src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
   </body>
 </html>

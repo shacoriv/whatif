@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+
 }
 
 textarea {
@@ -64,10 +65,12 @@ h3 {
 }
 
 #wrapper{
-  padding:20px;
+  padding:30px;
   color: transparent;
   text-shadow:0px 0px 0px #000;
   position: absolute;
+  margin: 50px;
+
 }
 .choice {
   height: 10px;
@@ -95,16 +98,20 @@ h3 {
   flex-direction: row-reverse;
 }
 .text {
+  width: 30%;
+  padding: 20%;
+  margin: .5em auto;
   font-family: "Amatic SC";
   width:160px;
   height:192px;
   background: #ffc;
   margin: 4px;
   position: absolute;
-  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -webkit-box-shadow: 5px 5px 7px 2px rgba(33,33,33,.7);
 }
 
 .containers {
+  width: 50%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -150,3 +157,48 @@ h3 {
   #home h1:hover {
     color: white;
   }
+  /*Share Link Buttons*/
+  #mail {
+    height: 100px;
+    width: 100px;
+    left: 20px;
+    top: 240px;
+    position: absolute;
+    opacity: 0.7;
+  }
+    #mail:hover {
+      opacity: 1.0;
+    }
+  #twitter {
+    height: 80px;
+    width: 80px;
+    left: 30px;
+    top: 340px;
+    position: absolute;
+    opacity: 0.7;
+  }
+    #twitter:hover {
+      opacity: 1.0;
+    }
+  #fb {
+    height: 20px;
+    width: 20px;
+    left: 40px;
+    top: 440px;
+    position: absolute;
+    opacity: 0.7;
+  }
+    #fb:hover {
+      opacity: 1.0;
+    }
+  #gplus {
+    height: 20px;
+    width: 20px;
+    left: 38px;
+    top: 530px;
+    position: absolute;
+    opacity: 0.7;
+  }
+    #gplus:hover {
+      opacity: 1.0;
+    }
