@@ -18,6 +18,7 @@ jinja_environment = jinja2.Environment(
 #OUR STATIC CLASSES!!!!!!!
 class Byte(ndb.Model):
     byte = ndb.StringProperty()
+    color = ndb.StringProperty()
 
 #OUR HANDLERS THAT ACTUALLY DO SHIT
 class MainHandler(webapp2.RequestHandler):
@@ -35,10 +36,10 @@ class CreateByte(webapp2.RequestHandler):
         byte_key = ndb.Key('Byte', self.request.get("byte"))
         byte = byte_key.get()
         if not byte:
-            byte = Byte(byte = self.request.get('byte'))
+            byte = Byte(byte = self.request.get('byte'), color = self.request.get('color'))
             byte.key = byte_key
             byte.put()
-            time.sleep(1)
+            time.sleep(0.5)
         self.redirect('/view.html')
 
 class View(webapp2.RequestHandler):
