@@ -37,8 +37,8 @@ function onClick(e) {
   if (byte){
     byte = false;
     clickedElement.animate({
-      width: 200,
-      height: 200,
+      width: 300,
+      height: 300,
       "font-size": "30px",
     }, "slow")
   } else {

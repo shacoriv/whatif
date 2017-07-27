@@ -169,13 +169,13 @@ p.post{
   color: black;
 }
 
-#nav a{
+/*#nav a{
   text-decoration: none;
   padding: 5px;
   background-color: #ffddcc;
   color: black;
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-}
+}*/
 
 #post {
   position: absolute;
@@ -190,12 +190,143 @@ p.post{
 
 div.nav-button {
   padding: 10px;
-  background: white;
-  border: 3px dotted black;
+background-color: #ffddcc;
   font-family: "Amatic SC";
   font-size: 50px;
   font-weight: bold;
   width: 100px;
   text-align: center;
   margin: 10px;
+}
+
+.anim750{
+  transition: all 750ms ease-in-out;
+}
+
+#Awesome{
+	position: relative;
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+  backface-visibility: hidden;
+  top: 300px;
+  left: 550px;
+  padding: 10px;
+
+}
+
+#Awesome .sticky{
+	transform: rotate(60deg);
+}
+
+#Awesome:hover .sticky{
+	transform: rotate(10deg);
+}
+
+#Awesome .sticky{
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	width:180px;
+	height: 180px;
+}
+
+#Awesome .reveal .circle{
+  font-family: "Amatic SC";
+  font-weight: 200;
+  line-height: 140px;
+  text-align: center;
+  cursor: pointer;
+}
+#Awesome .reveal .circle{
+	background: #fafafa;
+}
+
+#Awesome .circle_wrapper{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#Awesome .circle{
+	position: absolute;
+	width: 340px;
+	height:  340px;
+	margin: 20px;
+}
+
+#Awesome .back{
+	height: 10px;
+	top: 30px;
+}
+
+#Awesome:hover .back{
+	height: 90px;
+	top: 110px;
+}
+
+#Awesome .back .circle{
+	margin-top: -130px;
+	background-image: -webkit-linear-
+}
+
+#Awesome:hover .back .circle{
+	margin-top: -50px;
+  background-color: #ffe6e6;
+}
+
+#Awesome .front{
+	height: 150px;
+	bottom: 0;
+	top: auto;
+
+	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
+}
+
+#Awesome:hover .front{
+	height: 70px;
+
+	-webkit-box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
+
+
+
+}
+
+#Awesome .front .circle{
+	margin-top: -5px;
+	background: #ffddcc;
+	background-image: -webkit-linear-gradient(bottom, rgba(251,236,63,.0) 75%, #ffddcc 95%);
+  background-image: -moz-linear-gradient(bottom, rgba(251,236,63,.0) 75%, #ffddcc 95%);
+  background-image: linear-gradient(bottom, rgba(251,236,63,.0) 75%, #ffddcc 95%);
+}
+
+#Awesome h4{
+  font-family: "Amatic SC";
+  font-weight: 200;
+  text-align: center;
+	position: absolute;
+	width: 180px;
+	height: 140px;
+  line-height: 10px;
+	transition: opacity 50ms linear 400ms;
+  font-size: 40px;
+  font-weight: bold;
+  transform: rotate(-5deg);
+
+
+}
+
+#Awesome:hover h4{
+	opacity: 0;
+	transition: opacity 50ms linear 300ms;
+}
+
+#Awesome:hover .front .circle{
+	margin-top: -90px;
+	background-color: #ffddcc;
+	background-position: 0 100px;
+
 }
