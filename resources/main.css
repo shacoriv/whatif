@@ -11,11 +11,6 @@ ul li a h2 {
 	font-weight: bold;
 	line-height: 26.4px;
 }
-
-h2,p{
-  font-size:100%;
-  font-weight: normal;
-}
 ul,li{
   list-style:none;
 }
@@ -155,16 +150,14 @@ li.card{
   top:400px;
   left:500px;
 }
+
 p.about{
   border: 3px;
-  border-style: dotted;
-
 }
 p.post{
   border: 3px;
-  border-style: dotted;
-
 }
+
 #nav{
 	font-family: "Amatic SC";
 	font-size: 70px;
@@ -179,20 +172,30 @@ p.post{
 #nav a{
   text-decoration: none;
   padding: 5px;
-  border: dotted;
-  background-color: #ffffff;
+  background-color: #ffddcc;
   color: black;
-
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
-div.container2{
-  font-size: 30px;
-  position: relative;
-  bottom: 20px;
-}
-
-#about{
+#post {
   position: absolute;
-  top:550px;
-  left:1000px;
+  top: 620px;
+  left: 1100px;
+}
+#about {
+  position: absolute;
+  top:620px;
+  left:1250px;
+}
+
+div.nav-button {
+  padding: 10px;
+  background: white;
+  border: 3px dotted black;
+  font-family: "Amatic SC";
+  font-size: 50px;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  margin: 10px;
 }
