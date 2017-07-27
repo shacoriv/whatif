@@ -20,28 +20,27 @@
             <form method = "post" action = "/create_byte">
               <textarea name = "byte"></textarea>
               <input type = "submit" value = "Stick!" class = "button"></input>
-            </form></p>
+            </form>
+        </p>
         <div class="close"><b>X</b></div>
       </div>
     </div>
-<!-- Wrapper that blurs out -->
-
 <!-- Post comments -->
     <h1>Cheerbytes!</h1>
     <div id = "wrapper">
     <div class = "containers">
       {% for byt in byte %}
-        <p><div class = "text">{{byt.byte}}</div></p>
+        <p><div class = "text" id = "{{byt.byte}}" onclick= "byte_text(&quot;{{byt.byte}}&quot;)">{{byt.byte}}</div></p>
       {% endfor %}
     </div>
 <!-- CLick Here -->
     <div class="container3">
       <p id="open">Post a Byte!</p>
     </div>
-  </div>
+    </div>
 <!-- To go back to homepage! -->
-      <div class = "return" id="navb">
-        <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
-      </div>
+    <div class = "return" id="navb">
+      <a href="main.html" id="home" title="Homepage"><h2>Back to Homepage</h2></a>
+    </div>
   </body>
 </html>

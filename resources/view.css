@@ -1,3 +1,7 @@
+html {
+position: static;
+}
+
 body {
   background-image: url("cork.jpg");
   background-size: 1000px 1000px;
@@ -70,11 +74,11 @@ h3 {
   }
 
 .text {
-  width:10em;
-  height:12em;
+  width:160px;
+  height:192px;
   background: #ffc;
   margin: 3px;
-  display: block;
+  position: absolute;
 }
 
 .containers {
@@ -83,6 +87,7 @@ h3 {
   flex-wrap: wrap;
   margin: 5px;
 }
+
   h2 {
   	font-family: "Amatic SC";
   	font-size: 40px;
