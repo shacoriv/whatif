@@ -41,3 +41,31 @@ body {
     width: 500px;
     height: 400px;
 }
+
+#tut1 {
+	height: 600px;
+	width: 1000px;
+	border: 3px solid black;
+}
+
+#tut2 {
+	height: 300px;
+	width: 300px;
+}
+
+#tut3 {
+	height: 400px;
+	width: 600px;
+	border: 3px solid black;
+}
+
+#tut4 {
+	height: 500px;
+	width: 100px;
+	border: 3px solid black;
+}
+
+#tut5 {
+	height: 200px;
+	width: 600px;
+}
